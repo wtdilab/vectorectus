@@ -15,12 +15,12 @@ $gutter: 12px;
 
 // Site-wide Variables
 
-$site-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$site-fontfamily: "Neuton", Helvetica, Arial, sans-serif;
 
 
 // COLORS
 
-$site-color-bg:   #333;
+$site-color-bg:   #18252c url(images/background.png) center top;
 $site-color-font: #fff;
 	
 $selection-color: #b7d6ee; // when a user highlights text this is the super duper color!
@@ -38,7 +38,7 @@ body {
 	
     font-variant: normal;
     font-style: normal;
-    font-weight: 300;
+    font-weight: bold;
     font-size: $fontsize-normal;
     font-family: $site-fontfamily;
 			
@@ -58,8 +58,10 @@ a        { color: $site-color-font; border-bottom: 1px dotted $site-color-font; 
 a:hover  { color: $site-color-font; border-bottom: 1px solid $site-color-font; }
 a:active { color: $site-color-font; border-bottom: 1px solid $site-color-font; }
 
-em, cite { font-style: italic; font-weight: 500; }
+em, cite { font-style: italic; }
 hr       { display: none; }
+
+h1 { font-size: $fontsize-medium; }
 
 
 // DEFAULTS

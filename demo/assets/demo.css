@@ -1,13 +1,35 @@
 .icon {
-    float: left;
+    display: block;
     width: 64px;
     height: 64px;
     
-    background: #111;
-    
+    background: white; 
+    fill: #222; // VML color fallback   
 }
 
-.vectorectus {
-    color: red;
-    background: blue;
+.icon path {
+    fill: #ccc;
+    stroke: none;
 }
+
+.icon:hover path {
+    fill: #333;
+}
+
+/*
+Available Properties
+
+"cursors",
+"fill",
+"fill-opacity",
+"opacity",
+
+"stroke",
+"stroke-dasharray",
+"stroke-linecap",
+"stroke-linejoin",
+"stroke-miterlimit",
+"stroke-opacity",
+"stroke-width"
+
+*/

@@ -1,0 +1,25 @@
+.layout-header, .layout-bank { 
+    margin: 0 auto;
+    width: 300px;
+    
+    
+}
+
+.layout-header { 
+    height: 70px; 
+    
+    h1 { text-align: center;  margin: 30px 0;  }
+}
+
+.layout-bank {
+    background: white;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .layout-header, .layout-bank { width: 500px; }
+}
+
+@media only screen and (min-width: 800px) {
+    .layout-header, .layout-bank { width: 700px; }
+}
