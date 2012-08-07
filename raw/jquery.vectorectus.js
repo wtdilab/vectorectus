@@ -2,7 +2,7 @@
     $.fn.extend({
         vectorectus : function (url, options) {
             if (typeof Raphael == 'undefined') {
-                console.log("Vectorectus is dependent Raphael.js to run, maybe it won't be required in the future...");
+                console.error("Vectorectus is dependent Raphael.js to run, maybe it won't be required in the future...");
                 return this;
             }
             
@@ -23,15 +23,15 @@
             
                 var id      = $(element).attr('id'),
                     shape   = $(element).data(options.data),
-                    path    = SelectorToPath(shape);
+                    path    = SelectorToPath(shape),
                     
-                var vector = Raphael (id, "100%", "100%"),
+                    vector = Raphael (id, "100%", "100%"),
                     path   = vector.path(path);
                 
-                // VML fallback, if UA is IE8 or lower
-                if (Raphael.vml) path.attr({ 'stroke-width': '0','stroke-opacity': '0', 'fill': $(element).css('fill') });
+                // VML fallback, if UserAgent is IE8 or lower
+                if (Raphael.vml) 
+                    path.attr({ 'stroke-width': '0','stroke-opacity': '0', 'fill': $(element).css('fill') });
                 
-                var elbox = $(element).width()
                 
                 var box = path.getBBox();
                 vector.setViewBox (box.x, box.y, box.width, box.height, true);
@@ -54,7 +54,7 @@
                         DrawVectors(this);
                     });
                 }).error(function(e) { 
-                    console.error('vectorectus error: ' + e); 
+                    console.error('Vectorectus error: ' + e); 
                 });
             };
     

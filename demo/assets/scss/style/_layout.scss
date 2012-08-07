@@ -2,13 +2,16 @@
     margin: 0 auto;
     width: 300px;
     
-    
+    @include transition-property(width, height);
+    @include transition-duration(0.25s);
+    @include transition-timing-function(ease);
+
 }
 
 .layout-header { 
-    height: 70px; 
+    height: 80px; 
     
-    h1 { text-align: center;  margin: 30px 0;  }
+    h1 { text-align: center;  margin: 20px 0 30px 0;  }
 }
 
 .layout-bank {

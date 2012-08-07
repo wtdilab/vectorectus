@@ -1,4 +1,4 @@
-/* line 12, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/includes/_reset.scss */
+/* line 12, scss/includes/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,28 +21,28 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 24, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/includes/_reset.scss */
+/* line 24, scss/includes/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 27, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/includes/_reset.scss */
+/* line 27, scss/includes/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 30, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/includes/_reset.scss */
+/* line 30, scss/includes/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 33, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/includes/_reset.scss */
+/* line 33, scss/includes/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 37, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/includes/_reset.scss */
+/* line 37, scss/includes/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -50,23 +50,23 @@ q:before, q:after {
 }
 
 /* remember to highlight inserts somehow! */
-/* line 43, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/includes/_reset.scss */
+/* line 43, scss/includes/_reset.scss */
 ins {
   text-decoration: none;
 }
 
-/* line 46, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/includes/_reset.scss */
+/* line 46, scss/includes/_reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 50, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/includes/_reset.scss */
+/* line 50, scss/includes/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 29, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 29, scss/style/_base.scss */
 body {
   background: #18252c url(images/background.png) center top;
   color: white;
@@ -84,61 +84,61 @@ body {
   -webkit-tap-highlight-color: #b7d6ee;
 }
 
-/* line 50, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 50, scss/style/_base.scss */
 ::selection {
   background: #b7d6ee;
 }
 
-/* line 51, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 51, scss/style/_base.scss */
 ::-moz-selection {
   background: #b7d6ee;
 }
 
-/* line 52, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 52, scss/style/_base.scss */
 img::selection {
   background: #b7d6ee;
 }
 
-/* line 53, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 53, scss/style/_base.scss */
 img::-moz-selection {
   background: #b7d6ee;
 }
 
-/* line 57, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 57, scss/style/_base.scss */
 a {
   color: white;
   border-bottom: 1px dotted white;
   text-decoration: none;
 }
 
-/* line 58, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 58, scss/style/_base.scss */
 a:hover {
   color: white;
   border-bottom: 1px solid white;
 }
 
-/* line 59, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 59, scss/style/_base.scss */
 a:active {
   color: white;
   border-bottom: 1px solid white;
 }
 
-/* line 61, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 61, scss/style/_base.scss */
 em, cite {
   font-style: italic;
 }
 
-/* line 62, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 62, scss/style/_base.scss */
 hr {
   display: none;
 }
 
-/* line 64, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 64, scss/style/_base.scss */
 h1 {
-  font-size: 32px;
+  font-size: 48px;
 }
 
-/* line 70, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 70, scss/style/_base.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -146,81 +146,93 @@ h1 {
   *behavior: url(assets/library/boxsizing.htc);
 }
 
-/* line 72, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 72, scss/style/_base.scss */
 .left {
   float: left;
 }
 
-/* line 73, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 73, scss/style/_base.scss */
 .right {
   float: right;
 }
 
-/* line 75, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 75, scss/style/_base.scss */
 .block {
   display: block;
 }
 
-/* line 76, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 76, scss/style/_base.scss */
 .inline {
   display: inline-block;
 }
 
-/* line 78, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 78, scss/style/_base.scss */
 .relative {
   position: relative;
 }
 
-/* line 79, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 79, scss/style/_base.scss */
 .absolute {
   position: absolute;
 }
 
-/* line 80, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 80, scss/style/_base.scss */
 .fixed {
   position: fixed;
 }
 
-/* line 82, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_base.scss */
+/* line 82, scss/style/_base.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 1, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_layout.scss */
+/* line 1, scss/style/_layout.scss */
 .layout-header, .layout-bank {
   margin: 0 auto;
   width: 300px;
+  -webkit-transition-property: width, height;
+  -moz-transition-property: width, height;
+  -o-transition-property: width, height;
+  transition-property: width, height;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
 }
 
-/* line 8, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_layout.scss */
+/* line 11, scss/style/_layout.scss */
 .layout-header {
-  height: 70px;
+  height: 80px;
 }
-/* line 11, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_layout.scss */
+/* line 14, scss/style/_layout.scss */
 .layout-header h1 {
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0 30px 0;
 }
 
-/* line 14, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_layout.scss */
+/* line 17, scss/style/_layout.scss */
 .layout-bank {
   background: white;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 800px) {
-  /* line 20, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_layout.scss */
+  /* line 23, scss/style/_layout.scss */
   .layout-header, .layout-bank {
     width: 500px;
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 24, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/_layout.scss */
+  /* line 27, scss/style/_layout.scss */
   .layout-header, .layout-bank {
     width: 700px;
   }
 }
-/* line 3, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/modules/_bank.scss */
+/* line 3, scss/style/modules/_bank.scss */
 .bank-item {
   float: left;
   width: 100px;
@@ -228,7 +240,7 @@ h1 {
   border: 0 dotted #eee;
   border-width: 0 1px 1px 0;
 }
-/* line 11, /Users/krambuhle/Sites/Vectorectus/demo/assets/scss/style/modules/_bank.scss */
+/* line 11, scss/style/modules/_bank.scss */
 .bank-item .icon {
   margin: 18px;
 }
