@@ -215,11 +215,6 @@ h1 {
   margin: 20px 0 30px 0;
 }
 
-/* line 17, scss/style/_layout.scss */
-.layout-bank {
-  background: white;
-}
-
 @media only screen and (min-width: 600px) and (max-width: 800px) {
   /* line 23, scss/style/_layout.scss */
   .layout-header, .layout-bank {
@@ -232,15 +227,67 @@ h1 {
     width: 700px;
   }
 }
-/* line 3, scss/style/modules/_bank.scss */
+/* line 6, scss/style/modules/_bank.scss */
 .bank-item {
   float: left;
   width: 100px;
   height: 100px;
-  border: 0 dotted #eee;
-  border-width: 0 1px 1px 0;
 }
-/* line 11, scss/style/modules/_bank.scss */
-.bank-item .icon {
-  margin: 18px;
+
+/* line 1, scss/style/modules/_icon.scss */
+.icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  fill: #222;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+/* line 14, scss/style/modules/_icon.scss */
+.icon .layer1 {
+  fill: #d1e6eb;
+  stroke: none;
+}
+/* line 15, scss/style/modules/_icon.scss */
+.icon .layer2 {
+  fill: #6e868c;
+  stroke: none;
+}
+/* line 16, scss/style/modules/_icon.scss */
+.icon .layer3 {
+  fill: #3b4a51;
+  stroke: none;
+}
+/* line 19, scss/style/modules/_icon.scss */
+.icon:hover .layer1 {
+  fill: #f5f9fa;
+}
+/* line 20, scss/style/modules/_icon.scss */
+.icon:hover .layer2 {
+  fill: #586b6f;
+}
+/* line 21, scss/style/modules/_icon.scss */
+.icon:hover .layer3 {
+  fill: #262f33;
+}
+
+/*
+Available Properties
+
+"cursors",
+"fill",
+"fill-opacity",
+"opacity",
+
+"stroke",
+"stroke-dasharray",
+"stroke-linecap",
+"stroke-linejoin",
+"stroke-miterlimit",
+"stroke-opacity",
+"stroke-width"
+
+*/

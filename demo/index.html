@@ -15,16 +15,18 @@
 	<script src="assets/library/jquery.min.js"></script>
 	<script src="assets/library/jquery.transit.js"></script>
 	<script src="assets/library/raphael.min.js"></script>
-	<script src="../raw/jquery.vectorectus.js"></script>
+	<script src="../raw/jquery.vectorectus2.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Neuton:700' rel='stylesheet' type='text/css'> 
     
     <!-- user scripts / style -->
     <link  href="assets/style.css" rel="stylesheet" />
-    
-    <!-- demo style / script -->
-    <!-- *** These are the files to look at! *** --->
-    <link  href="assets/demo.css"  rel="stylesheet" /> 
-    <script src="assets/scripts/script.js"></script>
+   
+   
+    <script>
+	    $(window).ready( function () { 
+		    $('[data-vectorectus]').vectorectus(["../data/social.json"]);
+		});
+	</script>
 </head>
 
 <body>
@@ -33,23 +35,26 @@
     <h1>Vectorectus.js</h1>
 </header>
 
-<section class="layout-bank clearfix">
-    <ul class="bank">
-        <li class="bank-item"><i class="icon" data-vectorectus="social.facebook"></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus="social.twitter"></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus="social.youtube"></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus="logo.apple"></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus=""></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus=""></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus=""></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus=""></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus=""></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus =""></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus=""></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus=""></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus=""></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus=""></i></li>
-        <li class="bank-item"><i class="icon" data-vectorectus=""></i></li>
+<section class="layout-bank bank clearfix">
+    <ul class="">
+        <li class="bank-item"><i class="icon" data-vectorectus="facebook-icon"></i></li>
+        <li class="bank-item"><i class="icon" data-vectorectus="facebook-icon-square"></i></li>
+        <li class="bank-item"><i class="icon" data-vectorectus="facebook-icon-circle"></i></li>
+        <li class="bank-item"><i class="icon" data-vectorectus="facebook-icon-layered"></i></li>
+        
+        <li class="bank-item"><i class="icon" data-vectorectus="twitter-icon"></i></li>
+        <li class="bank-item"><i class="icon" data-vectorectus="twitter-icon-square"></i></li>
+        <li class="bank-item"><i class="icon" data-vectorectus="twitter-icon-circle"></i></li>
+        <li class="bank-item"><i class="icon" data-vectorectus="twitter-mascot"></i></li>
+        
+        
+        <li class="bank-item"><i class="icon" data-vectorectus="youtube-icon-stacked"></i></li>
+        <li class="bank-item"><i class="icon" data-vectorectus="youtube-icon-square"></i></li>
+        <li class="bank-item"><i class="icon" data-vectorectus="youtube-icon-circle"></i></li>
+        
+        <li class="bank-item"><i class="icon" data-vectorectus="pintrest-icon"></i></li>
+        <li class="bank-item"><i class="icon" data-vectorectus="pintrest-icon-square"></i></li>
+        <li class="bank-item"><i class="icon" data-vectorectus="pintrest-icon-circle"></i></li>
     </ul>
 </section>
 

@@ -1,0 +1,44 @@
+.icon {
+    display: block;
+    width:  100%;
+    height: 100%;
+    
+    padding: 32px;
+    
+    fill: #222;   
+    
+    @include box-sizing (border-box);
+}
+
+.icon {
+	.layer1 { fill: #d1e6eb; stroke: none; } 
+	.layer2 { fill: #6e868c; stroke: none; } 
+	.layer3 { fill: #3b4a51; stroke: none; }
+
+	&:hover { 
+		.layer1 { fill: lighten(#d1e6eb, 10%);  } 
+		.layer2 { fill: darken(#6e868c,  10%); }
+		.layer3 { fill: darken(#3b4a51,  10%); }
+	}
+}
+
+
+
+
+/*
+Available Properties
+
+"cursors",
+"fill",
+"fill-opacity",
+"opacity",
+
+"stroke",
+"stroke-dasharray",
+"stroke-linecap",
+"stroke-linejoin",
+"stroke-miterlimit",
+"stroke-opacity",
+"stroke-width"
+
+*/
