@@ -2,27 +2,31 @@
     display: block;
     width:  100%;
     height: 100%;
-    
-    padding: 32px;
-    
-    fill: #222;   
-    
+
+    padding: 24px;
+
+    fill: #222;
+
     @include box-sizing (border-box);
 }
 
 .icon {
-	.layer1 { fill: #d1e6eb; stroke: none; } 
-	.layer2 { fill: #6e868c; stroke: none; } 
-	.layer3 { fill: #3b4a51; stroke: none; }
-
-	&:hover { 
-		.layer1 { fill: lighten(#d1e6eb, 10%);  } 
-		.layer2 { fill: darken(#6e868c,  10%); }
-		.layer3 { fill: darken(#3b4a51,  10%); }
-	}
+	.layer1 { fill: #d1e6eb; stroke: none; }
+	.layer2 { fill: mix(#d1e6eb, #3c5e66, 50%); stroke: none; }
+	.layer3 { fill: mix(#d1e6eb, #3c5e66, 30%); stroke: none; }
+	.layer4 { fill: mix(#d1e6eb, #3c5e66, 15%); stroke: none; }
+	.layer5 { fill: mix(#d1e6eb, #3c5e66,  0%); stroke: none; }
 }
 
+.icon:hover {
+	background: rgba(white, 0.05);
 
+	.layer1 { fill: adjust-hue(saturate(#d1e6eb, 24%), 60deg); }
+	.layer2 { fill: adjust-hue(saturate(mix(#d1e6eb, #3c5e66, 50%), 20%), 60deg); }
+	.layer3 { fill: adjust-hue(saturate(mix(#d1e6eb, #3c5e66, 30%), 20%), 60deg); }
+	.layer4 { fill: adjust-hue(saturate(mix(#d1e6eb, #3c5e66, 15%), 20%), 60deg); }
+	.layer5 { fill: adjust-hue(saturate(mix(#d1e6eb, #3c5e66,  0%), 20%), 60deg); }
+}
 
 
 /*
