@@ -68,7 +68,7 @@ table {
 
 /* line 29, scss/style/_base.scss */
 body {
-  background: #18252c url(images/background.png) center top;
+  background: #18252c url(images/background.png) left top;
   color: white;
   text-transform: none;
   text-decoration: none;
@@ -189,49 +189,36 @@ h1 {
 
 /* line 1, scss/style/_layout.scss */
 .layout-header, .layout-bank {
-  margin: 0 auto;
-  width: 300px;
-  -webkit-transition-property: width, height;
-  -moz-transition-property: width, height;
-  -o-transition-property: width, height;
-  transition-property: width, height;
-  -webkit-transition-duration: 0.25s;
-  -moz-transition-duration: 0.25s;
-  -o-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: ease;
-  -moz-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+  float: left;
+  clear: both;
 }
 
-/* line 11, scss/style/_layout.scss */
+/* line 6, scss/style/_layout.scss */
 .layout-header {
-  height: 80px;
+  height: 100px;
 }
-/* line 14, scss/style/_layout.scss */
+/* line 9, scss/style/_layout.scss */
 .layout-header h1 {
   text-align: center;
-  margin: 20px 0 30px 0;
+  margin: 25px 0 30px 50px;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 800px) {
-  /* line 23, scss/style/_layout.scss */
-  .layout-header, .layout-bank {
-    width: 500px;
-  }
+/* line 1, scss/style/modules/_bank.scss */
+.bank {
+  max-width: 800px;
 }
-@media only screen and (min-width: 800px) {
-  /* line 27, scss/style/_layout.scss */
-  .layout-header, .layout-bank {
-    width: 700px;
-  }
-}
-/* line 6, scss/style/modules/_bank.scss */
+
+/* line 5, scss/style/modules/_bank.scss */
 .bank-item {
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+}
+
+/* line 11, scss/style/modules/_bank.scss */
+.bank-item-double {
+  width: 160px;
+  height: 80px;
 }
 
 /* line 1, scss/style/modules/_icon.scss */
@@ -239,7 +226,7 @@ h1 {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 32px;
+  padding: 24px;
   fill: #222;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -253,25 +240,48 @@ h1 {
 }
 /* line 15, scss/style/modules/_icon.scss */
 .icon .layer2 {
-  fill: #6e868c;
+  fill: #86a2a8;
   stroke: none;
 }
 /* line 16, scss/style/modules/_icon.scss */
 .icon .layer3 {
-  fill: #3b4a51;
+  fill: #68868d;
   stroke: none;
 }
-/* line 19, scss/style/modules/_icon.scss */
-.icon:hover .layer1 {
-  fill: #f5f9fa;
+/* line 17, scss/style/modules/_icon.scss */
+.icon .layer4 {
+  fill: #527279;
+  stroke: none;
 }
-/* line 20, scss/style/modules/_icon.scss */
-.icon:hover .layer2 {
-  fill: #586b6f;
+/* line 18, scss/style/modules/_icon.scss */
+.icon .layer5 {
+  fill: #3c5e66;
+  stroke: none;
 }
+
 /* line 21, scss/style/modules/_icon.scss */
+.icon:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+/* line 24, scss/style/modules/_icon.scss */
+.icon:hover .layer1 {
+  fill: #d1c9f3;
+}
+/* line 25, scss/style/modules/_icon.scss */
+.icon:hover .layer2 {
+  fill: #7f71bd;
+}
+/* line 26, scss/style/modules/_icon.scss */
 .icon:hover .layer3 {
-  fill: #262f33;
+  fill: #6050a6;
+}
+/* line 27, scss/style/modules/_icon.scss */
+.icon:hover .layer4 {
+  fill: #4c3e8d;
+}
+/* line 28, scss/style/modules/_icon.scss */
+.icon:hover .layer5 {
+  fill: #3a2c76;
 }
 
 /*
